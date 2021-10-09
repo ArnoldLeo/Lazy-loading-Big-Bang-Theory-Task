@@ -73,7 +73,7 @@ export default {
           }
         }
       });
-      console.log("list items||", list1);
+      // console.log("list items||", list1);
       list1=Object.entries(list1).sort((a, b) => {
         if (b > a) {
           return -1;
@@ -81,13 +81,8 @@ export default {
           return 1;
         } else return 0;
       });
-      list1=Object.fromEntries(list1);
-      console.log("sorted items||", list1);
-      // let l1=Object.entries(list1);
-      // // l1.sort((a,b) => a[0][0]-b[0][0])
-      // console.log("Object.entries||", l1);
-      // // list1=
-      // console.log("sorted list items||",l1.sort((a,b)=> a[1]-b[1]) );
+      // list1=Object.fromEntries(list1);
+      // console.log("sorted items||", list1);
       return list1;
     },
   },
